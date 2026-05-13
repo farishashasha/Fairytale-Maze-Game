@@ -1,0 +1,107 @@
+body { 
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif; 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/7e/c8/b8/7ec8b8af5bfa45cd6b53db70af855cf9.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+    text-align: center; 
+    overflow: hidden;
+}
+
+#selection-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 { font-size: 3.5rem; text-shadow: 3px 3px #000; margin-bottom: 10px; }
+h3 { font-size: 1.8rem; margin-bottom: 30px; }
+
+#character-row { 
+    display: flex; 
+    flex-direction: row; 
+    gap: 25px; 
+    margin: 20px; 
+}
+
+.char-card { 
+    background: rgba(255, 255, 255, 0.1); 
+    border: 4px solid #ffd700; 
+    padding: 15px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: transform 0.3s, background 0.3s;
+    width: 180px; 
+}
+
+.char-card:hover { 
+    background: rgba(255, 215, 0, 0.3); 
+    transform: scale(1.1); 
+}
+
+.char-img-preview { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    mix-blend-mode: multiply; /* Removes white background for preview */
+}
+
+.char-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffd700;
+}
+
+#game-container { 
+    display: none; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+}
+
+canvas { 
+    background: rgba(0, 0, 0, 0.8); 
+    border: 5px solid #ffd700; 
+    border-radius: 10px; 
+}
+
+#ui-bar { 
+    display: flex; 
+    gap: 40px; 
+    margin-bottom: 20px; 
+    background: rgba(40, 20, 10, 0.9); 
+    padding: 15px 30px; 
+    border-radius: 50px; 
+    border: 3px solid #ffd700;
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+#hearts-container {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #000;
+    color: #ff4d4d;
+}
+
+.stat { color: #ffd700; font-weight: bold; }
+p { font-size: 1.3rem; margin-top: 15px; }
+
+button { 
+    padding: 12px 30px; 
+    background: #ffd700; 
+    border: none; 
+    border-radius: 30px; 
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+}

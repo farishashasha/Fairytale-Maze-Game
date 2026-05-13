@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Fairytale Escape</title>
+        <link rel="icon" type="image/jpeg" href="https://i.pinimg.com/736x/bf/3b/c2/bf3bc2a487e4650be8f5ce546f27e246.jpg">
+
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="selection-screen">
+    <h1>THE GREAT FAIRYTALE ESCAPE</h1>
+    <h3>Select your character to start</h3>
+    
+    <div id="character-row">
+        <div class="char-card" onclick="startGame('https://i.pinimg.com/736x/92/77/bd/9277bdb7c73afb753f747d6586431e9e.jpg')">
+            <img src="https://i.pinimg.com/736x/92/77/bd/9277bdb7c73afb753f747d6586431e9e.jpg" class="char-img-preview">
+            <div class="char-name">Guardian</div>
+        </div>
+        <div class="char-card" onclick="startGame('https://i.pinimg.com/736x/79/71/96/797196764c222713daee3590ca48d684.jpg')">
+            <img src="https://i.pinimg.com/736x/79/71/96/797196764c222713daee3590ca48d684.jpg" class="char-img-preview">
+            <div class="char-name">Mage</div>
+        </div>
+        <div class="char-card" onclick="startGame('https://i.pinimg.com/736x/ee/c7/6e/eec76e1771619b13eb002efdb7ebaab1.jpg')">
+            <img src="https://i.pinimg.com/736x/ee/c7/6e/eec76e1771619b13eb002efdb7ebaab1.jpg" class="char-img-preview">
+            <div class="char-name">Spirit</div>
+        </div>
+        <div class="char-card" onclick="startGame('https://i.pinimg.com/736x/e9/c8/fb/e9c8fbf5e647807bf44b00a9021ee735.jpg')">
+            <img src="https://i.pinimg.com/736x/e9/c8/fb/e9c8fbf5e647807bf44b00a9021ee735.jpg" class="char-img-preview">
+            <div class="char-name">Wanderer</div>
+        </div>
+    </div>
+</div>
+
+<div id="game-container">
+    <div id="ui-bar">
+        <div class="stat"><span id="hearts-container">❤️❤️❤️</span></div>
+        <div class="stat">Quest: <span id="lvl-num">1</span> / 3</div>
+        <div class="stat">Time: <span id="time-val">0</span>s</div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <p>Use Arrow Keys to navigate. Escape from the dragon</p>
+    <button onclick="location.reload()">Main Menu</button>
+</div>
+
+<!-- Linking the JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
